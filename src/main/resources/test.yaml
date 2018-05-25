@@ -1,0 +1,93 @@
+apidoc: "1.0"
+tag:
+   - name: "user"
+     description: "用户接口"
+   - name: "business"
+     description: "业务接口"
+   - name: "other"
+     description: "其他"
+schemes:
+  - "http"
+  - "https"
+paths:
+    /changjet/user:
+     post:
+        tags:
+          - "user"
+        summary: "添加畅捷通用户"
+        consumes:
+          - "application/json"
+          - "application/xml"
+        produces:
+          - "application/xml"
+          - "application/json"
+        parameters:
+          - in : "body"
+            name: "post body 体"
+            desc: "post 请求体"
+            schemes:
+              - name: "userId"
+                type: "String"
+                required: true
+                desc: "用户ID"
+              - name : "age"
+                type: "int"
+                required: false
+                desc: "用户年龄"
+        responses:
+           schemes:
+            - name: "userId"
+              type: "String"
+              required: true
+              desc: "用户ID"
+            - name : "age"
+              type: "int"
+              required: false
+              desc: "用户年龄"
+           "200":
+             description: "successful operation"
+           "400":
+             description: "Invalid ID supplied"
+           "404":
+             description: "Pet not found"
+     get:
+         tags:
+           - "user"
+         summary: "查询畅捷通用户"
+         consumes:
+           - "application/json"
+           - "application/xml"
+         produces:
+           - "application/xml"
+           - "application/json"
+         parameters:
+           - in : "query"
+             name: "查询参数"
+             desc: "查询参数"
+             schemes:
+               - name: "userId"
+                 type: "String"
+                 required: true
+                 desc: "用户ID"
+               - name : "age"
+                 type: "int"
+                 required: false
+                 desc: "用户年龄"
+         responses:
+            schemes:
+              - name: "userId"
+                type: "String"
+                required: true
+                desc: "用户ID"
+              - name : "age"
+                type: "int"
+                required: false
+                desc: "用户年龄"
+            "200":
+              description: "successful operation"
+            "400":
+              description: "Invalid ID supplied"
+            "404":
+              description: "Pet not found"
+
+
