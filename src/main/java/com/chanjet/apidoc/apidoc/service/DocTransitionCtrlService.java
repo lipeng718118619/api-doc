@@ -1,6 +1,8 @@
 package com.chanjet.apidoc.apidoc.service;
 
 
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * @program: api-doc
  * @description:
@@ -10,4 +12,5 @@ package com.chanjet.apidoc.apidoc.service;
 public interface DocTransitionCtrlService
 {
     String yaml2MarkdownDoc(String yaml);
+    void exportWord(String html,HttpServletResponse response);
 }

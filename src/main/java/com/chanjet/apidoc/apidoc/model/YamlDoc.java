@@ -21,6 +21,10 @@ public class YamlDoc
 
     private Map<String, Map<String, Object>> paths;
 
+    public YamlDoc()
+    {
+        super();
+    }
 
     public List<String> getSchemes()
     {

@@ -4560,21 +4560,21 @@
                     datefmt = ms;
                 break;
 
-            case "yy-mm-dd" :
+            case "yy-mm-readme.txt" :
                     datefmt = ymd;
                 break;
 
-            case "yyyy-mm-dd" :
+            case "yyyy-mm-readme.txt" :
                     datefmt = fymd;
                 break;
 
-            case "yyyy-mm-dd h:i:s ms" :
+            case "yyyy-mm-readme.txt h:i:s ms" :
             case "full + ms" : 
                     datefmt = fymd + " " + hms + " " + ms;
                 break;
 
             case "full" :
-            case "yyyy-mm-dd h:i:s" :
+            case "yyyy-mm-readme.txt h:i:s" :
                 default:
                     datefmt = fymd + " " + hms;
                 break;

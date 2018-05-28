@@ -64,6 +64,6 @@ public class Scheme
     @Override
     public String toString()
     {
-        return name+"|"+type+"|"+required+"|"+desc+"\n";
+        return "|"+name+"|"+type+"|"+required+"|"+desc+"\n";
     }
 }
